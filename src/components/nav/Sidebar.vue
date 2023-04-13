@@ -1,12 +1,9 @@
 <template>
     <div class="sidebar" :style="{ width: sidebarWidth }" @mouseenter="toggleSidebar" @mouseleave="toggleSidebar">
         <h1>
-            <span v-if="collapsed">
-                <div>S</div>
-                <div>B</div>
-            </span>
-            <span v-else>
-                Some<br>Blog
+            <img class="sidebar-img" :style="{ width: logoWidth }" alt="Vue logo" src="../../assets/logo.png">
+            <span v-if="!collapsed">
+                <div>Blog</div>
             </span>
         </h1>
 
@@ -24,7 +21,7 @@
 
 <script>
 import SidebarLink from './SidebarLink'
-import { collapsed, toggleSidebar, sidebarWidth } from './state';
+import { collapsed, toggleSidebar, sidebarWidth, logoWidth } from './state';
 
 export default {
     name: 'Sidebar-nav',
@@ -35,7 +32,7 @@ export default {
         SidebarLink,
     },
     setup() {
-        return { collapsed, toggleSidebar, sidebarWidth }
+        return { collapsed, toggleSidebar, sidebarWidth, logoWidth }
     }
 }
 </script>
@@ -57,6 +54,10 @@ export default {
 
     display: flex;
     flex-direction: column;
+}
+
+.sidebar-img {
+    transition: .3s ease;
 }
 
 .collapse-icon {

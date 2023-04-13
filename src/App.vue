@@ -29,6 +29,9 @@ export default {
   --clr-indigo600: #4f46e5;
   --clr-indigo500: #6366f1;
   --clr-indigo300: #a5b4fc;
+  --clr-indigo50: #eef2ff;
+
+  background-color: #0f0e25;
 }
 
 #app {
