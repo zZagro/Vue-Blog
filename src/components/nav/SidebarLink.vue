@@ -54,16 +54,17 @@ export default {
 }
 
 .link:hover {
-    background-color: var(--sidebar-item-hover);
+    background-color: var(--clr-indigo500);
 }
 
 .link.active {
-    background-color: var(--sidebar-item-active);
+    background-color: var(--clr-indigo700);
 }
 
 .link .icon {
     flex-shrink: 0;
     width: 25px;
     margin-right: 10px;
+    color: white;
 }
 </style>

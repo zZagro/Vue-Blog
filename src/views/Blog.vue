@@ -1,10 +1,10 @@
 <template>
-    <h1>Dashboard View</h1>
+    <h1>Blog View</h1>
 </template>
 
 <script>
 export default {
-    name: 'dashboard-page',
+    name: 'blog-page',
     setup() {
         
     }

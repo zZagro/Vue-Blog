@@ -2,17 +2,17 @@
     <div class="sidebar" :style="{ width: sidebarWidth }" @mouseenter="toggleSidebar" @mouseleave="toggleSidebar">
         <h1>
             <span v-if="collapsed">
-                <div>V</div>
                 <div>S</div>
+                <div>B</div>
             </span>
             <span v-else>
-                Vue Sidebar
+                Some<br>Blog
             </span>
         </h1>
 
         <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
         <SidebarLink to="/recent" icon="fas fa-clock">Recent</SidebarLink>
-        <SidebarLink to="/articles" icon="fas fa-newspaper">Articles</SidebarLink>
+        <SidebarLink to="/blog" icon="fas fa-newspaper">Blog</SidebarLink>
         <SidebarLink to="/dashboard" icon="fas fa-columns">Dashboard</SidebarLink>
         <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink>
 
@@ -40,18 +40,10 @@ export default {
 }
 </script>
 
-<style>
-:root {
-    --sidebar-bg-color: #2f855a;
-    --sidebar-item-hover: #38a169;
-    --sidebar-item-active: #276749;
-}
-</style>
-
 <style scoped>
 .sidebar {
     color: white;
-    background-color: var(--sidebar-bg-color);
+    background-color: var(--clr-indigo950);
 
     float: left;
     position: fixed;

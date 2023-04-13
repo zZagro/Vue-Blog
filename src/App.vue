@@ -1,5 +1,5 @@
 <template>
-  <Sidebar />
+  <Sidebar/>
   <div class="router" :style="{ 'margin-left': sidebarWidth }">
     <router-view/>
   </div>
@@ -22,6 +22,15 @@ export default {
 </script>
 
 <style>
+:root {
+  --clr-indigo950: #1e1b4b;
+  --clr-indigo800: #3730a3;
+  --clr-indigo700: #4338ca;
+  --clr-indigo600: #4f46e5;
+  --clr-indigo500: #6366f1;
+  --clr-indigo300: #a5b4fc;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
